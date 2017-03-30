@@ -121,7 +121,7 @@ tr {
 }
 
 th {
-  padding-right: 1em;  
+  padding-right: 1em;
 }
 
 
@@ -130,7 +130,7 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr:hover {
-  background-color: #B4ACAC;
+  background-color: #D0D3D4;
 }
 
 #Team {
