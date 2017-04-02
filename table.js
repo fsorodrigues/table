@@ -12,7 +12,6 @@ d3.csv('east_standings.csv', function (error,data) {
 
 		var	tbody = table.append('tbody');
 
-		// append the header row
 		thead.append('tr')
 		     .selectAll('th')
 		     .data(columns)
@@ -21,13 +20,11 @@ d3.csv('east_standings.csv', function (error,data) {
 		     .text(function (column) { return column; })
          .attr("id", function (column) { return column; });
 
-		// create a row for each object in the data
 		var rows = tbody.selectAll('tr')
 		  .data(data)
 		  .enter()
 		  .append('tr');
 
-		// create a cell in each row for each column
 		var cells = rows.selectAll('td')
 		                .data(function (row) {
 
@@ -43,8 +40,7 @@ d3.csv('east_standings.csv', function (error,data) {
 	  return table;
 	}
 
-	// render the table(s)
-	tabulate(data, ["img", "Team", "W", "L", "PCT", "GB"]); // 5 columns table
+	tabulate(data, ["img", "Team", "W", "L", "PCT", "GB"]);
 
 });
 
@@ -62,7 +58,6 @@ d3.csv('west_standings.csv', function (error,data) {
 
 		var	tbody = table.append('tbody');
 
-		// append the header row
 		thead.append('tr')
 		     .selectAll('th')
 		     .data(columns)
@@ -71,13 +66,11 @@ d3.csv('west_standings.csv', function (error,data) {
 		     .text(function (column) { return column; })
          .attr("id", function (column) { return column; });
 
-		// create a row for each object in the data
 		var rows = tbody.selectAll('tr')
 		  .data(data)
 		  .enter()
 		  .append('tr');
 
-		// create a cell in each row for each column
 		var cells = rows.selectAll('td')
 		                .data(function (row) {
 
@@ -93,7 +86,6 @@ d3.csv('west_standings.csv', function (error,data) {
 	  return table;
 	}
 
-	// render the table(s)
-	tabulate(data, ["img", "Team", "W", "L", "PCT", "GB"]); // 5 columns table
+	tabulate(data, ["img", "Team", "W", "L", "PCT", "GB"]);
 
 });
