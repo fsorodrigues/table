@@ -172,3 +172,20 @@ td:nth-child(2) {
   font-weight: 600;
   text-align: left;
 }
+
+.link_header:link {
+  text-decoration: none;
+  color: #8b675e;
+  font-family: 'Raleway', Verdana, sans-serif;
+}
+
+.link_header:hover {
+  color: #423A35;
+  text-decoration: underline;
+  font-family: 'Raleway', Verdana, sans-serif;
+}
+
+.link_header:visited {
+  color: #b26e6e;
+  font-family: 'Raleway', Verdana, sans-serif;
+}
